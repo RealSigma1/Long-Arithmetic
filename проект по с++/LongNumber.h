@@ -66,6 +66,7 @@ namespace LongMath {
         LongNumber &operator*=(const LongNumber &);
 
         LongNumber &operator/=(const LongNumber &);
+        ~LongNumber() = default;
     };
 }
 
