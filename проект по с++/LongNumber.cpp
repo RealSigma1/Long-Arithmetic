@@ -364,6 +364,7 @@ namespace LongMath {
         return *this = *this / other;
     }
 }
+LongNumber::~LongNumber() {}
 
 LongMath::LongNumber operator ""_ln(const char* binaryString, size_t) {
     return LongMath::LongNumber(binaryString);
