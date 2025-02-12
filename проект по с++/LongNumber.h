@@ -19,9 +19,10 @@ namespace LongMath {
         void deleteZeros();
 
         bool isZero() const;
-
+	
         int magnitude() const;
-
+		void setPrecision(int precision);
+		void truncateToPrecision();
     public:
         LongNumber();
 
