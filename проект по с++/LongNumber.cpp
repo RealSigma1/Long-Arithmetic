@@ -81,7 +81,19 @@ namespace LongMath {
             bits.pop_back();
         }
     }
+	void LongNumber::setPrecision(int precision) {
+    	this->precision = precision;
+    	truncateToPrecision(); 
+}
 
+
+	void LongNumber::truncateToPrecision() {
+    	if (point > precision) {
+        	bits.erase(bits.begin(), bits.begin() + (point - precision));
+        	point = precision;
+    }
+    	deleteZeros(); 
+}
     std::string LongNumber::toBinaryString() const {
         std::string binaryString;
 
@@ -362,7 +374,7 @@ namespace LongMath {
 
     LongNumber& LongNumber::operator/=(const LongNumber &other) {
         return *this = *this / other;
-    }
+    }	  
 }
 LongNumber::~LongNumber() {}
 
