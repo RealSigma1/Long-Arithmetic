@@ -73,4 +73,4 @@ LongMath::LongNumber operator ""_ln(unsigned long long);
 LongMath::LongNumber operator ""_ln(long double);
  
 LongMath::LongNumber operator"" _ln(const char* str, size_t);
-#endif //LONGMATH_LONGNUMBER_H
+#endif 
