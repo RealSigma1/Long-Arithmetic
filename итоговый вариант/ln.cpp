@@ -1,4 +1,3 @@
-//LongNumber.cpp
 #include "ln.h"
 #include <vector>
 #include <sstream>
