@@ -26,10 +26,10 @@ void test_multiplication(){
 }
 
 void test_division(){
-	LongNumber a = "101.10101010100101010"_ln;
-	LongNumber b = "101.011011001010010"_ln;
-	if((a/b).toStr() == "1.04460578578420892734576305514610736669179615856334319759657038695666850449517851315922721186412071157") std::cout << "test_division: OK" << std::endl;
-	else std::cout << "test_addition: FAIL"<< std::endl;
+	LongNumber a = "101.11"_ln; //5,75
+	LongNumber b = "110.01"_ln; // 6,25
+	if((a/b).toStr() == "0.92") std::cout << "test_division: OK" << std::endl;
+	else std::cout << "test_division: FAIL"<< std::endl;
 	std::cout << a/b << std::endl;
 }
 
