@@ -1,0 +1,60 @@
+#include "ln.cpp"
+
+using namespace LongMath;
+void test_addition(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	if((a+b).toStr() == "11.0907135009765625") std::cout << "OK" << std::endl;
+	else std::cout << "FAIL"<< std::endl;
+	std::cout << a+b << std::endl;
+}
+
+void test_substraction(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	if((a-b).toStr() == "0.2419586181640625") std::cout << "OK" << std::endl;
+	else std::cout << "FAIL"<< std::endl;
+	std::cout << a-b << std::endl;
+}
+
+void test_multiplication(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	if((a*b).toStr() == "30.736345496959984302520751953125") std::cout << "OK" << std::endl;
+	else std::cout << "FAIL"<< std::endl;
+	std::cout << a*b << std::endl;
+}
+
+void test_division(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	if((a/b).toStr() == "1.04460578578420892734576305514610736669179615856334319759657038695666850449517851315922721186412071157") std::cout << "OK" << std::endl;
+	else std::cout << "FAIL"<< std::endl;
+	std::cout << a/b << std::endl;
+}
+
+void test_comparision(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	
+	if (a >b and a!=b and b<a) std::cout << "OK" << std::endl;
+}
+
+void neg(){
+	LongNumber c =	-9_ln, d = "101.1"_ln;
+	LongNumber res = c+d;
+	if (res.toStr() == "-3.5") std::cout << "OK"<< std::endl;
+	else std::cout << "FAIL"<< std::endl;
+	std::cout << res;
+}
+int main(){
+	LongNumber a = "101.10101010100101010"_ln;
+	LongNumber b = "101.011011001010010"_ln;
+	std::cout << "a ="<< a << " "<< "b =" << b << std::endl;
+	test_addition();
+	test_substraction();
+	test_multiplication();
+	test_division();
+	test_comparision();
+	neg();	
+}
