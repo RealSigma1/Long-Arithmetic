@@ -13,7 +13,7 @@ void test_substraction(){
 	LongNumber a = "101.10101010100101010"_ln;
 	LongNumber b = "101.011011001010010"_ln;
 	if((a-b).toStr() == "0.2419586181640625") std::cout << "test_substraction: OK" << std::endl;
-	else std::cout << "test_addition: FAIL"<< std::endl;
+	else std::cout << "test_substraction: FAIL"<< std::endl;
 	std::cout << a-b << std::endl;
 }
 
@@ -21,7 +21,7 @@ void test_multiplication(){
 	LongNumber a = "101.10101010100101010"_ln;
 	LongNumber b = "101.011011001010010"_ln;
 	if((a*b).toStr() == "30.736345496959984302520751953125") std::cout << "test_multiplication: OK" << std::endl;
-	else std::cout << "test_addition: FAIL"<< std::endl;
+	else std::cout << "test_multiplication: FAIL"<< std::endl;
 	std::cout << a*b << std::endl;
 }
 
